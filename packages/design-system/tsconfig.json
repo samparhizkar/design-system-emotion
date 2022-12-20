@@ -1,0 +1,20 @@
+{
+  "extends": "../../tsconfig.json",
+  "compilerOptions": {
+    "baseUrl": "./src",
+    "esModuleInterop": true,
+    "target": "esnext",
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "module": "commonjs",
+    "jsx": "react-jsx",
+    "jsxImportSource": "@emotion/react",
+    "incremental": true,
+    "plugins": [
+      {
+        "name": "typescript-styled-plugin"
+      }
+    ],
+    "types": ["jest", "node"]
+  },
+  "exclude": ["node_modules", ".yarn", "dist"]
+}
